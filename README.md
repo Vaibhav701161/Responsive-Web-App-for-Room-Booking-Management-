@@ -1,4 +1,3 @@
-Sure! Here's a detailed and impressive README for your project:
 
 # Responsive Web App for Room Booking Management 🏨
 
