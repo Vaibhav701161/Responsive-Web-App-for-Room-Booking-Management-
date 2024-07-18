@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundarone Hostels Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sundarone Hostels Booking</h1>
+    </header>
+
+    <main>
+        <section id="room-summary">
+            <div class="summary-box">
+                <h2>Rooms Summary</h2>
+                <div class="stat-container">
+                    <div class="stat-box">
+                        <h3>Available Rooms</h3>
+                        <p id="available-rooms">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Occupied Rooms</h3>
+                        <p id="occupied-rooms">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Unavailable Rooms</h3>
+                        <p id="unavailable-rooms">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="room-grid">
+            <!-- Room details will be dynamically added here -->
+        </section>
+
+        <section id="booking-form">
+            <h2>New Booking Form</h2>
+            <form id="new-booking-form">
+                <label for="room-select">Select Room:</label>
+                <select id="room-select" name="room-select" required></select><br>
+
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" name="check-in" required><br>
+
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" name="check-out" required><br>
+
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" name="guest-name" required><br>
+
+                <label for="room-type">Room Type:</label>
+                <input type="text" id="room-type" name="room-type" required><br>
+
+                <label for="check-in-meter">Check-In Meter Reading:</label>
+                <input type="number" id="check-in-meter" name="check-in-meter" required><br>
+
+                <label for="check-out-meter">Check-Out Meter Reading:</label>
+                <input type="number" id="check-out-meter" name="check-out-meter"><br>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required><br>
+
+                <button type="submit">Book Room</button>
+            </form>
+        </section>
+
+        <section id="available-room-list">
+            <h2>Available Rooms List</h2>
+            <ul id="available-rooms-list">
+                <!-- Available rooms will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="unallocated-rooms">
+            <h2>Unallocated Rooms List</h2>
+            <ul id="unallocated-rooms-list">
+                <!-- Unallocated rooms will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
